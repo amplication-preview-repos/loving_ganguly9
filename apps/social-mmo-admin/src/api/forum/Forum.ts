@@ -1,0 +1,10 @@
+import { Thread } from "../thread/Thread";
+
+export type Forum = {
+  id: string;
+  createdAt: Date;
+  updatedAt: Date;
+  name: string | null;
+  description: string | null;
+  threads?: Array<Thread>;
+};
